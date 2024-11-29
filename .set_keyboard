@@ -1,0 +1,9 @@
+#!/bin/bash
+language_lock="/home/ay/tech/suckless/.language_lock"
+if [ $(cat $language_lock ) = "us" ]; then
+	echo "az" > $language_lock
+else
+	echo "us" > $language_lock
+fi
+setxkbmap -layout $(cat $language_lock)
+xmodmap /home/ay/tech/suckless/.Xmodmap

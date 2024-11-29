@@ -70,7 +70,7 @@ static const struct arg args[] = {
 	//{ netspeed_tx,  "  %s",                                                                           "wlo1" },
 	//{ netspeed_rx,  "  %s ",                                                                         "wlan0" },
 	//{ run_command, "[V %s]  " ,"amixer sget IEC958 | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'"},
-	{ run_command, " %s  ",         "pactl get-sink-volume @DEFAULT_SINK@ | awk '{ print $5 }'"},
+	{ run_command, "%s  ",         "/home/ay/tech/suckless/slstatus/get_sound.sh"},
 	{ battery_perc," %s%%  " ,                                                                     "BAT1"},
 	{ cpu_perc,    " %s%%  ",                                                                            },
 	{ ram_perc,    " %s%%  ",                                                                            },
