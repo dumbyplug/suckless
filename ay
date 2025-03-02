@@ -1,0 +1,21 @@
+// Keyborad Layout for Azerbaijani Alt-Q
+
+default partial alphanumeric_keys
+xkb_symbols "latin" {
+
+  include "us"
+
+  name[Group1]= "Azerbaijani";
+
+  key <AD07> {[ u,U,udiaeresis,Udiaeresis  ]};
+  key <AD08> {[ i,I,idotless, Iabovedot ]};
+  key <AD09> {[ o,O,odiaeresis, Odiaeresis  ]};
+  key <AC05> {[ g,G,gbreve,     Gbreve      ]};
+
+  key <AD03> {[ e, E, schwa,      SCHWA       ]};
+
+  key <AB03> {[ c,C,ccedilla,   Ccedilla    ]};
+  key <AC02> {[ s,S,scedilla,   Scedilla    ]};
+
+  include "level3(ralt_switch)"
+};
