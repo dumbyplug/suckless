@@ -1,9 +1,11 @@
-vim.cmd("colorscheme koehler")
 vim.cmd("set relativenumber")
+vim.cmd("syntax enable")
 vim.cmd("set number")
 vim.cmd("set termguicolors")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set tabstop=4")
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme wildcharm")
 vim.cmd("set clipboard+=unnamedplus")
 vim.cmd("set colorcolumn=80")
+
+vim.cmd("hi! Normal guibg=NONE ctermbg=NONE")
